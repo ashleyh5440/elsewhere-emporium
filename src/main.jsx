@@ -1,13 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-// import App from './App.jsx'
-import './index.css'
 import { createRef } from 'react'
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider, NavLink, useLocation, useOutlet } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { CSSTransition, SwitchTransition } from 'react-transition-group';
+
+import './index.css'
+import './App.css'
 
 import Navigation from './components/Navigation';
 import Home from './pages/Home';

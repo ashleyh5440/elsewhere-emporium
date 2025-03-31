@@ -9,11 +9,11 @@ import Navigation from './components/Navigation';
 
 function App({ router }) {
 
-  // if (!router) {
-  //   return<div>Loading...</div>;
-  // }
+  if (!router) {
+    return<div>Loading...</div>;
+  }
 
-  // const routeResult = useRoutes(router); 
+  const routeResult = useRoutes(router); 
 
   return (
     <main>
