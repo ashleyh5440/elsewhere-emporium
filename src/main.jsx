@@ -13,6 +13,10 @@ import './App.css'
 import Navigation from './components/Navigation';
 import Home from './pages/Home';
 import About from './pages/About';
+import Cart from './pages/Cart';
+import Checkout from './pages/Checkout';
+import Support from "./pages/Support";
+
 
 const routes = [
   {
@@ -25,6 +29,18 @@ const routes = [
     path: '/about',
     name: "About",
     element: <About />,
+    nodeRef: createRef()
+  },
+  {
+    path: '/cart',
+    // name: "Cart",
+    element: <Cart />,
+    nodeRef: createRef()
+  },
+  {
+    path: '/checkout',
+    // name: "Checkout",
+    element: <Checkout />,
     nodeRef: createRef()
   },
 ]

@@ -7,7 +7,7 @@ import './style.css';
 function Navigation({ routes }) {
     return (
         <Navbar>
-          <Nav className="mx-auto">
+          <Nav className="left">
             {routes.map((route) => (
             <Nav.Link 
               key={route.path}
@@ -18,7 +18,11 @@ function Navigation({ routes }) {
               {route.name}
             </Nav.Link>
         ))}
+          <div className="cart-box">
+            <p><strong>Cart</strong></p>
+          </div>
           </Nav>
+          {/* <div>cart</div> */}
         </Navbar>
     );
 }

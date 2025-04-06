@@ -1,5 +1,5 @@
 {
-  "name": "vite-project",
+  "name": "third-eye-designs",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -16,7 +16,20 @@
     "react-bootstrap": "^2.10.2",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.23.0",
-    "react-transition-group": "^4.4.5"
+    "react-transition-group": "^4.4.5",
+    "react-scripts": "^5.0.1",
+    "redux": "^4.2.1",
+    "redux-form": "^8.3.10",
+    "web-vitals": "^3.5.0",
+    "react-redux": "^8.1.3",
+    "@babel/runtime": "^7.23.1",
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-brands-svg-icons": "^6.4.2",
+    "@fortawesome/free-regular-svg-icons": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@testing-library/jest-dom": "^6.1.3",
+    "@testing-library/user-event": "^14.5.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.56",

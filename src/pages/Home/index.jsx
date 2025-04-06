@@ -5,6 +5,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
 
 import logo from '../../../public/images/logo.png'
 import './style.css';
@@ -44,6 +45,9 @@ function Home() {
                 <div><h1>Third Eye Designs</h1></div>
                 <div id="logo-box">
                     <img src={logo} />
+                </div>
+                <div>
+                    <Button variant="primary">Explore</Button>
                 </div>
             </Container>
         </section>
