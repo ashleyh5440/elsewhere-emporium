@@ -1,5 +1,14 @@
+
+/* color theme
+// rgb(4, 20, 33)
+// rgb(4, 38, 48)
+// rgb(76, 114, 115)
+// rgb(134, 185, 176)
+// rgb(208, 214, 214) */
+
+
 body {
-    background-color: rgb(33, 16, 48);
+    background-color: rgb(4, 38, 48);
   }
 
   .container {

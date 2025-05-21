@@ -10,6 +10,13 @@ import Button from 'react-bootstrap/Button';
 import logo from '../../../public/images/logo.png'
 import './style.css';
 
+// color theme
+// rgb(4, 20, 33)
+// rgb(4, 38, 48)
+// rgb(76, 114, 115)
+// rgb(134, 185, 176)
+// rgb(208, 214, 214)
+
 function Home() {
 
     useEffect(() => {
@@ -42,13 +49,25 @@ function Home() {
     return (
         <section className="home-page">
             <Container>
-                <div><h1>Third Eye Designs</h1></div>
+                {/* <div><h1>Third Eye Designs</h1></div> */}
                 <div id="logo-box">
                     <img src={logo} />
                 </div>
-                <div>
-                    <Button variant="primary">Explore</Button>
+                <div id="options-bar">
+                    <Button variant="primary">Digital Prints</Button>
+                    <Button variant="primary">Tarot</Button>
+                    <Button variant="primary">Accessories</Button>
+                    <Button variant="primary">Bookmarks & Stickers</Button>
                 </div>
+                <Row>
+                    <Col sm={8}>hi</Col>
+                    <Col>
+                        <div className="box">
+                            <div className="diamond"></div>
+                            <div className="square"></div>
+                        </div>
+                    </Col>
+                </Row>
             </Container>
         </section>
     )
