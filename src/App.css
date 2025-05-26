@@ -8,7 +8,8 @@
 
 
 body {
-    background-color: rgb(4, 38, 48);
+    /* background-color: rgb(4, 38, 48); */
+    background-image: radial-gradient(circle, rgb(4, 38, 48), rgb(2, 23, 30), rgb(0, 6, 8));
   }
 
   .container {
