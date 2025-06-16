@@ -71,3 +71,9 @@ h1 {
     padding: 2% 0;
     background-color: rgb(4, 20, 33);
 }
+
+#home-about p {
+    font-size: 25px;
+    line-height: 1.8;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

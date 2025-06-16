@@ -60,7 +60,11 @@ function Home() {
                     <Button variant="primary">Bookmarks & Stickers</Button>
                 </div>
                 <Row>
-                    <Col sm={8}>hi</Col>
+                    <Col sm={8}>
+                        <div id="home-about">
+                            <p>Third Eye Designs is a botique art shop conjured from deep roots, folklore, and fiece feminine magic. From creepy-cute witch familiars to mystical prints and coloring pages, everything is crafted with intent, spirit, and just the right amount of trouble.</p>
+                        </div>
+                    </Col>
                     <Col>
                         <div className="box">
                             <div className="diamond"></div>
