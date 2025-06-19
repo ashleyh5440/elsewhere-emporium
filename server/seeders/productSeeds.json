@@ -1,0 +1,20 @@
+[
+    {
+        "name": "thing1",
+        "category": "Digital Prints",
+        "price": 40,
+        "image": "something"
+    },
+    {
+        "name": "thing2",
+        "category": "Accessories",
+        "price": 20,
+        "image": "something"
+    },
+    {
+        "name": "thing1",
+        "category": "Coloring Pages",
+        "price": 15,
+        "image": "something"
+    }
+]
