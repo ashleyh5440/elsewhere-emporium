@@ -12,9 +12,27 @@
         "image": "something"
     },
     {
-        "name": "thing1",
+        "name": "thing3",
         "category": "Coloring Pages",
         "price": 15,
+        "image": "something"
+    },
+     {
+        "name": "thing4",
+        "category": "Digital Prints",
+        "price": 60,
+        "image": "something"
+    },
+    {
+        "name": "thing5",
+        "category": "Accessories",
+        "price": 80,
+        "image": "something"
+    },
+    {
+        "name": "thing6",
+        "category": "Coloring Pages",
+        "price": 10,
         "image": "something"
     }
 ]

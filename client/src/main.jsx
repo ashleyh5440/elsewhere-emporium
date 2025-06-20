@@ -14,7 +14,7 @@ import Navigation from './components/Navigation';
 import Home from './pages/Home';
 import About from './pages/About';
 import Shop from './pages/Shop';
-import CategoryPage from './pages/Shop/CategoryPage';
+// import Accessories from './pages/Shop/Accessories';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
 import Support from "./pages/Support";
@@ -39,12 +39,11 @@ const routes = [
     element: <Shop />,
     nodeRef: createRef()
   },
-  {
-    path: '/shop/:category',
-    // name: "Category",
-    element: <CategoryPage />,
-    nodeRef: createRef()
-  },
+  // {
+  //   path: '/shop/accessories',
+  //   element: <CategoryPage />,
+  //   nodeRef: createRef()
+  // },
   {
     path: '/cart',
     // name: "Cart",
