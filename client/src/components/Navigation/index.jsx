@@ -19,7 +19,7 @@ function Navigation({ routes }) {
             </Nav.Link>
         ))}
           <div className="cart-box">
-            <p><strong>Cart</strong></p>
+            {/* <p><strong>Cart</strong></p> */}
           </div>
           </Nav>
           {/* <div>cart</div> */}

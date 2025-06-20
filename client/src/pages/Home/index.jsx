@@ -7,7 +7,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 
-import logo from '../../../public/images/logo.png'
+import banner from '../../../public/images/banner.png';
+import name from '../../../public/images/name.png';
 import './style.css';
 
 // color theme
@@ -51,7 +52,8 @@ function Home() {
             <Container>
                 {/* <div><h1>Third Eye Designs</h1></div> */}
                 <div id="logo-box">
-                    <img src={logo} />
+                    {/* <img src={banner} /> */}
+                    <img src={name} />
                 </div>
                 <div id="options-bar">
                     <Button variant="primary">Digital Prints</Button>
@@ -62,7 +64,7 @@ function Home() {
                 <Row>
                     <Col sm={8}>
                         <div id="home-about">
-                            <p>Third Eye Designs is a botique art shop conjured from deep roots, folklore, and fiece feminine magic. From creepy-cute witch familiars to mystical prints and coloring pages, everything is crafted with intent, spirit, and just the right amount of trouble.</p>
+                            <p>Moonblood Studio is a botique art shop conjured from deep roots, folklore, and fiece feminine magic. From creepy-cute witch familiars to mystical prints and coloring pages, everything is crafted with intent, spirit, and just the right amount of trouble.</p>
                         </div>
                     </Col>
                     <Col>

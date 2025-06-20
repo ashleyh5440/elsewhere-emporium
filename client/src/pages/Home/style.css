@@ -55,8 +55,13 @@ h1 {
 }
 
 #logo-box {
-    width: 35%;
+    width: 100vw;
+    /* height: 90vh; */
     margin-top: 30px;
+    background-image: url(../../../public/images/banner.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: none; 
 }
 
 #logo-box img {
@@ -69,7 +74,7 @@ h1 {
     justify-content: space-around;
     width: 100vw;
     padding: 2% 0;
-    background-color: rgb(4, 20, 33);
+    background-color: rgb(14, 0, 43);
 }
 
 #home-about p {
