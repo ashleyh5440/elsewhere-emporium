@@ -1,19 +1,24 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
+import { useQuery } from '@apollo/client';
+import { QUERY_PRODUCTS } from '../../utils/queries';
 
 const ProductCard = ({ product }) => {
+  const { loading, error, data } = useQuery(QUERY_PRODUCTS);
+  if (loading) return <p>loading . . .</p>
+  if (error) return <p>Error fetching products</p>
+  
   return (
     <Card className="product-card">
-      <Card.Img variant="top" src="holder.js/100px180" />
-      <Card.Body>
-          <Card.Title>Card Title</Card.Title>
-          <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-           </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
-      </Card.Body>
+      {data.products.map((product) => (
+        <div>
+          <img src={product.image} />
+          <h3>{product.name}</h3>
+          <span>${product.price}</span>
+        </div>
+      ))}
+
     </Card>
   );
 };

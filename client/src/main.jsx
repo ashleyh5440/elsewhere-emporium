@@ -1,7 +1,7 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import { createRef } from 'react'
-import { createRoot } from 'react-dom/client'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { createRef } from 'react';
+import { createRoot } from 'react-dom/client';
 import { createBrowserRouter, RouterProvider, NavLink, useLocation, useOutlet } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -18,6 +18,8 @@ import Shop from './pages/Shop';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
 import Support from "./pages/Support";
+
+import CardProduct from "./components/ProductCard/CardProduct";
 
 
 const routes = [
@@ -37,6 +39,12 @@ const routes = [
     path: '/shop',
     name: "Shop",
     element: <Shop />,
+    nodeRef: createRef()
+  },
+  {
+    path: '/cardproduct',
+    // name: "CardProduct",
+    element: <CardProduct />,
     nodeRef: createRef()
   },
   // {
