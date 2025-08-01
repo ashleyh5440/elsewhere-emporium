@@ -1,5 +1,5 @@
-const mongoose = require('mongoose'); //importing Mongoose library
+const mongoose = require('mongoose');
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/moonblood-studio');
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/tech-friends');
 
-module.exports = mongoose.connection; 
+module.exports = mongoose.connection;

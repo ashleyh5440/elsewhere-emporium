@@ -1,38 +1,126 @@
 [
-    {
-        "name": "thing1",
+  {
+        "name": "Digital Print1",
         "category": "Digital Prints",
-        "price": 40,
-        "image": "something"
+        "image": "product1.png",
+        "price": 20
     },
     {
-        "name": "thing2",
-        "category": "Accessories",
-        "price": 20,
-        "image": "something"
+        "name": "Digital Print2",
+        "category": "Digital Prints",
+        "image": "product1.png",
+        "price": 10
     },
     {
-        "name": "thing3",
-        "category": "Coloring Pages",
-        "price": 15,
-        "image": "something"
+        "name": "Digital Print3",
+        "category": "Digital Prints",
+        "image": "product1.png",
+        "description": "Bundle of four bookmarks.",
+        "price": 30
     },
      {
-        "name": "thing4",
-        "category": "Digital Prints",
-        "price": 60,
-        "image": "something"
+        "name": "Shadow and Smoke Bookmark Bundle",
+        "category": "Bookmark Bundles",
+        "image": "sns.png",
+        "description": "Bundle of four bookmarks.",
+        "price": 10
+    },
+     {
+        "name": "Familiar Spirits Bookmark Bundle",
+        "category": "Bookmark Bundles",
+        "image": "familiars.png",
+        "description": "Bundle of four bookmarks.",
+        "price": 10
     },
     {
-        "name": "thing5",
-        "category": "Accessories",
-        "price": 80,
-        "image": "something"
+        "name": "Third Eye Vision Bookmark Bundle",
+        "category": "Bookmark Bundles",
+        "image": "thirdeye.png",
+        "description": "Bundle of four bookmarks.",
+        "price": 10
     },
     {
-        "name": "thing6",
-        "category": "Coloring Pages",
-        "price": 10,
-        "image": "something"
+        "name": "Midnight Coven Bookmark Bundle",
+        "category": "Bookmark Bundles",
+        "image": "midnightcoven.png",
+        "description": "Bundle of four bookmarks.",
+        "price": 10
+    },
+    {
+        "name": "Dark Garden Bookmark Bundle",
+        "category": "Bookmark Bundles",
+        "image": "darkgarden.png",
+        "description": "Bundle of four bookmarks.",
+        "price": 10
+    },
+    {
+        "name": "Shadow and Smoke Sticker Bundle",
+        "category": "Sticker Bundles",
+        "image": "sns.png",
+        "description": "Bundle of six stickers.",
+        "price": 12
+    },
+     {
+        "name": "Familiar Spirits Sticker Bundle",
+        "category": "Sticker Bundles",
+        "image": "familiars.png",
+        "description": "Bundle of six stickers.",
+        "price": 12
+    },
+    {
+        "name": "Third Eye Vision Sticker Bundle",
+        "category": "Sticker Bundles",
+        "image": "thirdeye.png",
+        "description": "Bundle of six stickers.",
+        "price": 12
+    },
+    {
+        "name": "Midnight Coven Sticker Bundle",
+        "category": "Sticker Bundles",
+        "image": "midnightcoven.png",
+        "description": "Bundle of six stickers.",
+        "price": 12
+    },
+    {
+        "name": "Dark Garden Sticker Bundle",
+        "category": "Sticker Bundles",
+        "image": "darkgarden.png",
+        "description": "Bundle of six stickers.",
+        "price": 12
+    },
+     {
+        "name": "Shadow and Smoke Mixed Bundle",
+        "category": "Paper Charms Sets",
+        "image": "sns.png",
+        "description": "Bundle of two bookmarks and four stickers.",
+        "price": 14
+    },
+     {
+        "name": "Familiar Spirits Mixed Bundle",
+        "category": "Paper Charms Sets",
+        "image": "familiars.png",
+        "description": "Bundle of two bookmarks and four stickers.",
+        "price": 14
+    },
+    {
+        "name": "Third Eye Vision Mixed Bundle",
+        "category": "Paper Charms Sets",
+        "image": "thirdeye.png",
+        "description": "Bundle of two bookmarks and four stickers.",
+        "price": 14
+    },
+    {
+        "name": "Midnight Coven Mixed Bundle",
+        "category": "Paper Charms Sets",
+        "image": "midnightcoven.png",
+        "description": "Bundle of two bookmarks and four stickers.",
+        "price": 14
+    },
+    {
+        "name": "Dark Garden Mixed Bundle",
+        "category": "Paper Charms Sets",
+        "image": "darkgarden.png",
+        "description": "Bundle of two bookmarks and four stickers.",
+        "price": 14
     }
 ]

@@ -9,7 +9,7 @@
         "install": "cd server && npm i && cd ../client && npm i",
         "seed": "cd server && npm run seed",
         "build": "cd client && npm run build",
-        "render-build":"npm install && npm run build"
+        "render-build": "npm install && npm run build"
     },
     "keywords": [],
     "author": "",
@@ -19,6 +19,7 @@
     },
     "dependencies": {
         "bootstrap": "^5.3.3",
+        "gsap": "^3.13.0",
         "react-bootstrap": "^2.10.1"
     }
 }

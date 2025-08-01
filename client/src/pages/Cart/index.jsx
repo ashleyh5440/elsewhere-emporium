@@ -1,65 +1,36 @@
-import { NavLink, useNavigate } from 'react-router-dom';
+import React, { useContext } from "react";
+import { CartContext } from "../../components/CartContext";
 
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
+const Cart = () => {
+    const { cart, removeFromCart, clearCart, increaseQty, decreaseQty } = useContext(CartContext);
 
-import './style.css';
-
-function Cart() {
-
-    const navigate = useNavigate();
-
-    const handleCheckoutClick = () => {
-        //when user clicks the checkout btn, their taken to checkout page to pay
-    }
+    const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
     return (
-        <section className="cart-page"> 
-            <Container>
-                <Row id="box1">
-                    <Col sm={8}>
-                    <table className="in-cart">
-                        <thead>
-                            <tr>
-                                <th scope="col" width={250}>Product</th>
-                                <th scope="col" width={150}>Quanity</th>
-                                <th scope="col" width={150}>Price</th>
-                                {/* <th scope="col" width="130"></th> */}
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <div>product here</div>
-                                </td>
-                                <td>
-                                    <div className="quantity-box">
-                                        <Button variant="outline-light">-</Button>
-                                        <div>q</div>
-                                        <Button variant="outline-light">+</Button>
-                                    </div>
-                                </td>
-                                <td><div>$$$</div></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    </Col>
-                    <Col sm={4}>
-                        <div id="total-box">
-                            Total
+        <div>
+            <h2>Your Cart</h2>
+            {cart.length === 0 ? (
+                <p>No items in cart</p>
+            ) : (
+                <div>
+                    {cart.map(item => (
+                        <div key={item._id}>
+                            <h4>{item.name}</h4>
+                            <div style={{width: "30%", display: "flex", justifyContent: "space-around"}}>
+                                <button onClick={() => decreaseQty(item._id)}>-</button>
+                                <p>Qty: {item.quantity}</p>
+                                <button onClick={() => increaseQty(item._id)}>+</button>
+                            </div>
+                            <p>${(item.price * item.quantity).toFixed(2)}</p>
+                            <button onClick={() => removeFromCart(item._id)}>Remove</button>
                         </div>
-                    </Col>
-                    <Row>
-                        <div id="checkout-box">
-                            <Button>Checkout</Button>
-                        </div>
-                    </Row>
-                </Row>
-            </Container>
-        </section>
-    )
-}
+                    ))}
+                    <h3>Total: ${total.toFixed(2)}</h3>
+                </div>
+            )}
+            <button>Checkout</button>
+        </div>
+    );
+};
 
 export default Cart;

@@ -1,64 +1,43 @@
+// Important for useMutation: We bring in gql from the @apollo/client library to allow us to parse mutations (and queries) as template literals
 import { gql } from '@apollo/client';
 
-export const ADD_USER = gql`
-    mutation addUser($username: String!, $email: String!, $password: String!) {
-        addUser(username: $username, email: $email, password: $password) {
-            token
-            user {
-                _id
-                username
-                email
-            }
-        }
+// Important for useMutation: Each mutation we'd like to be able to perform gets exported out of our mutations.js utility
+export const ADD_PRODUCT = gql`
+  mutation addProduct($name: String!) {
+    addProduct(name: $name) {
+      _id
+      name
+      category
+      image
+      price
     }
+  }
 `;
 
-export const LOGIN_USER = gql`
-    mutation login($email: String!, $password: String!) {
-        login(email: $email, password: $password) {
-            token
-            user {
-                _id
-                username
-                email
-            }
-        }
+export const REMOVE_PRODUCT = gql`
+  mutation removeProduct($name: String!) {
+    removeProduct(name: $name) {
+      _id
+      name
+      category
+      image
+      price
     }
+  }
 `;
 
-//add item to user's cart
-
-export const ADD_PRODUCT = gql `
-    mutation addProduct($productId: ID!, $userCartId: ID!) {
-        addProduct(productId: $productId, userCartId: $userCartId) {
+export const CREATE_ORDER = gql `
+    mutation createOrder($email: String!, $products: [OrderItemInput] ! ) {
+        createOrder(email: $email, products: $products) {
             _id
-            cart_name
+            email
+            createdAt
             products {
-                _id
-                name
-                category
-                price
-                image
+                productId
+                quanity
             }
         }
     }
 `;
 
-//remove item from user's cart
-
-export const REMOVE_PRODUCT = gql `
-    mutation removeProduct($productId: ID!, $userCartId: ID!) {
-        removeProduct(productId: $productId, userCartId: $userCartId) {
-            _id
-            cart_name
-            products {
-                _id
-                name
-                category
-                price
-                image
-            }
-        }
-    }
-`;
 

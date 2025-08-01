@@ -1,45 +1,38 @@
-const { Product, User } = require('../models');
-const { signToken, AuthenticationError } = require('../utils/auth');
+// Important for useQuery: The resolver matches the typeDefs entry point and informs the request of the relevant data
+ 
+    // Important for Query Variables: Each query resolver function can accept up to four parameters.
+    // The second parameter, commonly referred to as "args," represents the variable argument values passed with the query.
+    // It is always an object, and in this case, we are destructuring that object to retrieve the profileId value.
+    
+ 
+  // Important for useMutation: The resolver matches the typeDefs entry point and informs the request of the relevant data
+
+
+const { Product, Order,Category } = require('../models');
 
 const resolvers = {
-    Query: {
-        getProducts: async () => { //gets all products from database
-            try {
-                const products = await Product.find();
-                return products;
-            } catch (error) {
-                throw new Error('Failed to fetch products');
-            }
-        }
+  Query:{
+    products: async () => Product.find(),
+    orders: async () => Order.find(),
+    categories: async () => Category.find(),
+    product: async (_, { productId }) => Product.findById(productId),
+    productsByCategory: async (_, { category }) => {
+      return Product.find({ category: new RegExp(`^${category}$`, 'i') });
     },
-    Mutation: {
-        addUser: async (_, { email, password }) => { //adds user
-            try {
-                const user = await User.create({ email, password });
-                const token = signToken(user);
-                return { token, user }
-            } catch (error) {
-                throw new Error('Failed to add user');
-            }
-        },
-        login: async (_, { email, password }) => {
-            try {
-                const user = await User.findOne({ email });
+  },
 
-                if (!user) {
-                    throw new AuthenticationError('User not found');
-                }
-                const correctPassword = await user.isCorrectPassword(password);
-                if(!correctPassword) {
-                    throw new AuthenticationError('Incorrect password');
-                }
-                const token = signToken(user);
-                return { token, user };
-            } catch (error) {
-                throw new AuthenticationError('Login failed');
-            }
-        }
-    }
+  Mutation: {
+    addProduct: async (parent, { name }) => {
+      return Product.create({ name, price, image });
+    },
+    removeProduct: async (_, { id }) => {
+      return await Product.findByIdAndDelete(id);
+    },
+    createOrder: async (_, { email, products }) => {
+      return await Order.create({ email, products });
+    },
+
+  },
 };
 
-module.exports = resolvers; 
+module.exports = resolvers;

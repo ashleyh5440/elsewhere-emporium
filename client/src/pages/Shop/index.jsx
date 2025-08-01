@@ -1,41 +1,43 @@
-import React, { useEffect, useState, useRef } from "react";
-import { useQuery } from "@apollo/client";
-import { QUERY_PRODUCTS } from "../../utils/queries";
-import { NavLink, useNavigate } from 'react-router-dom';
+import { useQuery } from '@apollo/client';
+import React from 'react';
+import{ Link } from "react-router-dom"
+import { QUERY_PRODUCTS } from '../../utils/queries';
+import { QUERY_CATEGORIES } from '../../utils/queries';
 
+import '../../components/CategoryList/index'
 
+import 'bootstrap/dist/css/bootstrap.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { Button } from 'react-bootstrap';
 
-import './style.css';
+import '../Shop/style.css'
 
-//have featured/sale items
+const Shop = () => {
+    const { loading, data, error } = useQuery(QUERY_CATEGORIES);
 
-function Shop() {
+    if (loading) return <p>Loading ...</p>
+    if (error) return <p>Um ... this is awkward but ...</p>
+
+    const categories = data?.categories || [];
+    console.log(categories)
     return (
-        <section className="shop-page">
-            <div className="container1">
-                <div id="box1">
-                    <div className="category-box">
-                        <h3>Bookmarks and stickers</h3>
-                    </div>
-                </div>
-                <div id="box2">
-                    <div className="category-box">
-                        <h3>Digital Prints</h3>
-                    </div>
-                </div>
-                <div md="auto" id="box3">
-                    <div className="category-box">
-                        <h3>Coloring Pages</h3>
-                        <h3>Accessories</h3>
-                    </div>
-                </div>
+        <section className="shop-container">
+            <div className="category-box">
+                {categories.map((cat) => (
+                    <Link 
+                        to={`/shop/${cat.name}`}
+                        key={cat._id}
+                        className='category-card' 
+                    >
+                        <h3>{cat.name}</h3>
+                        <img src={cat.image} />
+                        <p>{cat.description}</p>
+                    </Link>
+                ))}
             </div>
         </section>
     );
-}
+};
 
 export default Shop;

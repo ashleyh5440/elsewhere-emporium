@@ -1,26 +1,21 @@
+// Important for useQuery: We import the useQuery hook from @apollo/client
+import { useQuery } from '@apollo/client';
 import React, { useEffect, useRef } from 'react';
+import{ Link } from "react-router-dom"
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
+import 'bootstrap/dist/css/bootstrap.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
 
-import banner from '../../../public/images/banner.png';
-import name from '../../../public/images/name.png';
-import './style.css';
+import '../Home/style.css'
+import banner from '../../../public/banner.png'
 
-// color theme
-// rgb(4, 20, 33)
-// rgb(4, 38, 48)
-// rgb(76, 114, 115)
-// rgb(134, 185, 176)
-// rgb(208, 214, 214)
+const Home = () => {
 
-function Home() {
-
-    useEffect(() => {
+  useEffect(() => {
         // initialize ScrollTrigger
         gsap.registerPlugin(ScrollTrigger);
 
@@ -47,36 +42,43 @@ function Home() {
         }
     };  
 
-    return (
-        <section className="home-page">
-            <Container>
-                {/* <div><h1>Third Eye Designs</h1></div> */}
-                <div id="logo-box">
-                    {/* <img src={banner} /> */}
-                    <img src={name} />
-                </div>
-                <div id="options-bar">
-                    <Button variant="primary">Digital Prints</Button>
-                    <Button variant="primary">Tarot</Button>
-                    <Button variant="primary">Accessories</Button>
-                    <Button variant="primary">Bookmarks & Stickers</Button>
-                </div>
-                <Row>
-                    <Col sm={8}>
-                        <div id="home-about">
-                            <p>Moonblood Studio is a botique art shop conjured from deep roots, folklore, and fiece feminine magic. From creepy-cute witch familiars to mystical prints and coloring pages, everything is crafted with intent, spirit, and just the right amount of trouble.</p>
-                        </div>
-                    </Col>
-                    <Col>
-                        <div className="box">
-                            <div className="diamond"></div>
-                            <div className="square"></div>
-                        </div>
-                    </Col>
-                </Row>
-            </Container>
-        </section>
-    )
-}
+  return (
+   <section className="home-container">
+    <div id='banner-box'>
+      <p>Moonblood Studio</p>
+      <p id="tagline">Magic Drawn</p>
+    </div>
+    <Container className="features-section">
+      <div className="feature">
+        <h3>Fast Checkout</h3>
+        <p>Secure payments powered by Stripe for quick, safe purchases.</p>
+      </div>
+      <div className="feature">
+          <h3>Digital & Physical Goods</h3>
+          <p>Browse a variety of products to suit your needs.</p>
+      </div>
+      <div className="feature">
+          <h3>Easy Shipping</h3>
+          <p>Quick delivery and easy order tracking.</p>
+      </div>
+    </Container>
+    <Link to="/shop">
+      <button className="shop-button">Shop Now</button>
+    </Link>
+    <Container className="features-section" style={{height: "100vh"}}>
+      <Row style={{paddingTop: "12%"}}>
+        <Col sm={8}>
+          <div id="home-about">
+            <p>Moonblood Studio is a botique art shop conjured from deep roots, folklore, and fiece feminine magic. From creepy-cute witch familiars to mystical prints and coloring pages, everything is crafted with intent, spirit, and just the right amount of trouble.</p>
+          </div>
+        </Col>
+        <Col>
+          <p>picture here</p>
+        </Col>
+      </Row>
+    </Container>
+    </section>
+  );
+};
 
 export default Home;

@@ -1,34 +1,29 @@
 const db = require('../config/connection');
-const { Product, User } = require('../models');
+const { Product, Order, Category } = require('../models');
 const productSeeds = require('./productSeeds.json');
-
 const cleanDB = require('./cleanDB');
 
-db.once('open', async () => { //listens for 'open' event to execute function
-    try {
-        try { //resets the collections
-            await cleanDB('Product', 'products');
-            await cleanDB('User', 'users');
-        } catch (error) {
-            console.error('Error in cleaning database', error);
-        }
+db.once('open', async () => {
+  try {
+    await cleanDB('Product', 'products');
+    await cleanDB('Category', 'categories')
+    
+    await Product.create(productSeeds);
 
-        await Product.create(productSeeds); 
-        console.log('products seeded');
+    //this extracts products based on their categories
+    const uniqueCategories = [...new Set(productSeeds.map(p => p.category))];
 
-        //example user for testing
-        const user = await User.create({ //creates new user
-            username: 'exampleUser',
-            email: 'user@example.com',
-            password: 'password123'
-        });
+    //create category docs in the database
+    const categoryDocs = uniqueCategories.map(name => ({
+      name, 
+      image: `images/${name.toLowerCase()}.png`
+    }));
 
-        //example deck for testing
-        console.log('user seeded');
-        console.log('all done!');
+    await Category.create(categoryDocs);
 
-        process.exit(0);
-    } catch (error) {
-        console.error('Error seeding database', error);
-    }
-})
+    console.log('all done!');
+    process.exit(0);
+  } catch (err) {
+    throw err;
+  }
+});
