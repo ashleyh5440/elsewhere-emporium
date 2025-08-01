@@ -1,0 +1,55 @@
+.detail-page {
+    overflow-x: hidden;
+}
+
+.detail-page h2 {
+    font-family: "Viaoda Libre", serif;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.detail-page .row {
+    border: 2px solid red;
+}
+
+.detail-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin: 2%;
+    border: 2px solid green;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 550px;
+    border: 2px solid blue;
+}
+
+.carousel-inner {
+    background-image: url(../../../public/img-background.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100%;
+    width: 80%;
+    height: 100%;
+    border: 2px solid yellow;
+}
+
+.carousel-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20%;
+    border: 2px solid red;
+}
+
+.detail-right {
+    width: 20%;
+    margin: 2%;
+    /* border: 2px solid yellow; */
+}

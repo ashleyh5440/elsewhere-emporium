@@ -9,12 +9,15 @@
     background-color: rgb(68, 70, 143);
 }
 
+.product-box-link {
+    margin: 2%;
+}
+
 .product-box {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 30%;
-    margin: 2%;
+    width: 100%;
 }
 
 .product-box h3, .product-box p  {

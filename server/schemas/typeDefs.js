@@ -28,7 +28,6 @@ const typeDefs = `
       _id: ID!
       name: String!
       image: String!
-      description: String
     }
 
   # Important for useQuery: We define our Query type to inform our entry points

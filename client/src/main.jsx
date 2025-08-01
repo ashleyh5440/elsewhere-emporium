@@ -5,6 +5,7 @@ import App from './App.jsx'
 import Home from './pages/Home/index.jsx'
 import Shop from './pages/Shop/index.jsx'
 import ProductList from './components/ProductList/index.jsx'
+import ProductDetail from './components/ProductDetail/index.jsx'
 import { CartProvider } from './components/CartContext/index.jsx'
 import Cart from './pages/Cart/index.jsx'
 import Error from './pages/Error'
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: '/shop/:category',
         element: <ProductList />,
+      },
+      {
+        path: '/product/:productId',
+        element: <ProductDetail />,
       },
       {
         path: '/cart',
