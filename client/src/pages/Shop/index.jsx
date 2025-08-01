@@ -4,7 +4,7 @@ import{ Link } from "react-router-dom"
 import { QUERY_PRODUCTS } from '../../utils/queries';
 import { QUERY_CATEGORIES } from '../../utils/queries';
 
-import '../../components/CategoryList/index'
+// import '../../components/CategoryList/index'
 
 import 'bootstrap/dist/css/bootstrap.css';
 import Container from 'react-bootstrap/Container';
@@ -32,7 +32,6 @@ const Shop = () => {
                     >
                         <h3>{cat.name}</h3>
                         <img src={cat.image} />
-                        <p>{cat.description}</p>
                     </Link>
                 ))}
             </div>

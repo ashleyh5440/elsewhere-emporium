@@ -12,6 +12,16 @@ a h2 {
     font-family: "Kristi", cursive;
 }
 
+p {
+    font-family: "Viaoda Libre", serif;
+    font-size: 22px;
+}
+
 .bg-body-tertiary {
     background-color: rgb(11, 0, 34) !important;
+}
+
+.navbar-text span {
+    font-size: 15px;
+    margin-left: 15px;
 }

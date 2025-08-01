@@ -1,35 +1,47 @@
 import React, { useContext } from "react";
 import { CartContext } from "../../components/CartContext";
 
+import 'bootstrap/dist/css/bootstrap.css';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
+import '../Cart/style.css'
+
 const Cart = () => {
     const { cart, removeFromCart, clearCart, increaseQty, decreaseQty } = useContext(CartContext);
 
     const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
     return (
-        <div>
+        <section className="cart-page">
             <h2>Your Cart</h2>
             {cart.length === 0 ? (
                 <p>No items in cart</p>
             ) : (
-                <div>
+                <Container>
                     {cart.map(item => (
-                        <div key={item._id}>
+                        <div className="item-box" key={item._id}>
                             <h4>{item.name}</h4>
-                            <div style={{width: "30%", display: "flex", justifyContent: "space-around"}}>
-                                <button onClick={() => decreaseQty(item._id)}>-</button>
-                                <p>Qty: {item.quantity}</p>
-                                <button onClick={() => increaseQty(item._id)}>+</button>
+                            <div className="image-box">
+                                <img src={item.image} />
                             </div>
+                            <Row className="qnty-box">
+                                <Col><Button className="sub-btn" onClick={() => decreaseQty(item._id)}>-</Button></Col>
+                                <Col>Qty: {item.quantity}</Col>
+                                <Col><Button className="add-btn"onClick={() => increaseQty(item._id)}>+</Button></Col>
+                            </Row>
                             <p>${(item.price * item.quantity).toFixed(2)}</p>
-                            <button onClick={() => removeFromCart(item._id)}>Remove</button>
+                            <Button onClick={() => removeFromCart(item._id)}>Remove</Button>
                         </div>
                     ))}
-                    <h3>Total: ${total.toFixed(2)}</h3>
-                </div>
+                </Container>
             )}
-            <button>Checkout</button>
-        </div>
+            <div className="checkout-box">
+                <h3>Total: ${total.toFixed(2)}</h3>
+                <Button id="checkout-btn">Checkout</Button>
+            </div>
+        </section>
     );
 };
 

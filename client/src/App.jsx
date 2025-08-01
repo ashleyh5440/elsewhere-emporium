@@ -5,6 +5,7 @@ import { Outlet } from 'react-router-dom';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
+import 'animate.css';
 
 // Important for API Consumption: Create an instance of the ApolloClient class and specify the endpoint of your GraphQL API (e.g., 'http://localhost:3001')—the proxy set up in the previous activity facilitates this. 
 // We also instantiate a new InMemoryCache class that automatically caches queried data, enhancing performance.

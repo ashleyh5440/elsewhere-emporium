@@ -32,6 +32,8 @@ const CartProvider = ({ children }) => {
         });
     };
 
+    const cartCount = cart.reduce((total, item) => total + item.quantity, 0)
+
     const increaseQty = (productId) => {
         setCart((prev) =>
             prev.map(item =>
@@ -59,7 +61,7 @@ const CartProvider = ({ children }) => {
     const clearCart = () => setCart([]);
 
     return (
-        <CartContext.Provider value={{ cart, addToCart, removeFromCart, clearCart, increaseQty, decreaseQty }} >
+        <CartContext.Provider value={{ cart, addToCart, cartCount, removeFromCart, clearCart, increaseQty, decreaseQty }} >
             {children}
         </CartContext.Provider>
     )

@@ -12,9 +12,11 @@
 
 .category-card {
     border: 2px solid orange;
+    width: 35%;
+    margin: 2%;
 }
 
 .category-card h3 {
-    font-family: "Kristi", cursive;
-    font-size: 40px;
+    font-family: "Viaoda Libre", serif;
+    font-size: 35px;
 }
