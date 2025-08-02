@@ -31,7 +31,7 @@ const Shop = () => {
                         className='category-card' 
                     >
                         <h3>{cat.name}</h3>
-                        <img src={cat.image} />
+                        <div className="cat-img"><img src={cat.image}/></div>
                     </Link>
                 ))}
             </div>

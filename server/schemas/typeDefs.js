@@ -3,7 +3,7 @@ const typeDefs = `
     _id: ID!
         name: String!
         category: String!
-        image: String!
+        images: [String]!
         price: Int!
   }
 

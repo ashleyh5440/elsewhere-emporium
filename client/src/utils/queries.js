@@ -8,7 +8,7 @@ export const QUERY_PRODUCTS = gql`
       _id
       name
       category
-      image
+      images
       price
     }
   }
@@ -21,7 +21,7 @@ export const QUERY_SINGLE_PRODUCT = gql`
       _id
       name
       category
-      image
+      images
       price
     }
   }
@@ -33,7 +33,7 @@ export const QUERY_PRODUCTS_BY_CATEGORY = gql`
       _id
       name
       category
-      image
+      images
       price
     }
   }

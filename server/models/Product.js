@@ -9,20 +9,19 @@ const productSchema = new Schema({
         type: String,
         required: true,
     },
-    image: {
-        type: String,
+    categoryImage: {
+      type: String,
+      required: true,
+    },
+    images: {
+        type: [String],
         required: true,
+        validate: (arr) => arr.length > 0 //needs to have at least one image but can have more
     },
     price: {
         type: Number,
         required: true,
     },
-  // skills: [
-  //   {
-  //     type: String,
-  //     trim: true,
-  //   },
-  // ],
 });
 
 const Product = model('Product', productSchema);

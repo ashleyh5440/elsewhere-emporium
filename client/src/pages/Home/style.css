@@ -5,8 +5,9 @@
 }
 
 .shop-button {
+  width: 110%;
   background-color: rgb(14, 0, 43);
-  color: #333;
+  color: white;
   border: none;
   padding: 0.75rem 1.5rem;
   margin-top: 1rem;
@@ -23,8 +24,8 @@
   width: 100%;
   display: flex;
   justify-content: space-around;
-  gap: 1rem;
-  margin-top: 2rem;
+  /* gap: 1rem; */
+  /* margin-top: 2rem; */
 }
 
 .feature {
@@ -52,6 +53,7 @@
 
 #tagline {
   margin-top: 40%;
-  font-size: 75px;
-  font-family: "Kristi", cursive;
+  font-size: 60px;
+  font-family: "Viaoda Libre", serif;
+  color: white;
 }

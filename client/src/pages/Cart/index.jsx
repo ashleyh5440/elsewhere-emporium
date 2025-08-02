@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { Link } from 'react-router-dom';
 import { CartContext } from "../../components/CartContext";
 
 import 'bootstrap/dist/css/bootstrap.css';
@@ -28,7 +29,7 @@ const Cart = () => {
                             </div>
                             <Row className="qnty-box">
                                 <Col><Button className="sub-btn" onClick={() => decreaseQty(item._id)}>-</Button></Col>
-                                <Col>Qty: {item.quantity}</Col>
+                                <Col style={{color: "white"}}>Qty: {item.quantity}</Col>
                                 <Col><Button className="add-btn"onClick={() => increaseQty(item._id)}>+</Button></Col>
                             </Row>
                             <p>${(item.price * item.quantity).toFixed(2)}</p>
@@ -40,6 +41,7 @@ const Cart = () => {
             <div className="checkout-box">
                 <h3>Total: ${total.toFixed(2)}</h3>
                 <Button id="checkout-btn">Checkout</Button>
+                <Link to="/shop"><Button id="return-btn">Keep Shopping</Button></Link>
             </div>
         </section>
     );

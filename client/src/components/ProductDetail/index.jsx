@@ -28,19 +28,23 @@ const ProductDetail = () => {
     const product = data?.product;
     if (!product) return <p>Not found</p>
 
-    const images = product.images || [product.image];
+    const images = product.images || [];
 
     return (
         <section className="detail-page">
             <Row>
                 <h2>{product.name}</h2>
                 <Col xs={6} className="detail-left">
-                    <Carousel>
-                    {images.map((img, index) => (
-                        <Carousel.Item>
-                        <img className="d-block w-100" src={img} />
-                        </Carousel.Item>
-                        ))}
+                    <Carousel interval={3000} controls indicators>
+                        {images.map((img, index) => (
+                            <Carousel.Item key={index}>
+                                <img 
+                                    // className="d-block w-100" 
+                                    src={`/${img.replace(/;$/, '')}`} 
+                                    alt={`Product ${index}`} 
+                                />
+                            </Carousel.Item>
+                            ))}
                     </Carousel>
                 </Col>
                 <Col className="detail-right">

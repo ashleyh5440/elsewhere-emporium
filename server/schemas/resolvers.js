@@ -12,7 +12,8 @@ const { Product, Order,Category } = require('../models');
 
 const resolvers = {
   Query:{
-    products: async () => Product.find(),
+    // products: async () => Product.find(),
+    products: async () => Product.find().populate('category'),
     orders: async () => Order.find(),
     categories: async () => Category.find(),
     product: async (_, { productId }) => Product.findById(productId),

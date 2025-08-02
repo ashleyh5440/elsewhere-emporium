@@ -4,12 +4,9 @@
 
 .detail-page h2 {
     font-family: "Viaoda Libre", serif;
+    color: white;
     font-size: 30px;
     margin-top: 20px;
-}
-
-.detail-page .row {
-    border: 2px solid red;
 }
 
 .detail-left {
@@ -18,7 +15,6 @@
     align-items: center;
     width: 60%;
     margin: 2%;
-    border: 2px solid green;
 }
 
 .carousel {
@@ -26,30 +22,39 @@
     flex-direction: column;
     align-items: center;
     width: 80%;
-    height: 550px;
-    border: 2px solid blue;
+    height: 570px;
 }
 
 .carousel-inner {
     background-image: url(../../../public/img-background.png);
     background-repeat: no-repeat;
     background-position: center top;
-    background-size: 100%;
+    background-size: 90%;
     width: 80%;
     height: 100%;
-    border: 2px solid yellow;
+}
+
+.carousel-box {
+    width: 65%;
+    height: 65%;
 }
 
 .carousel-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20%;
-    border: 2px solid red;
+    margin-top: 27%;
+    margin-left: 16.5%;
+    width: 65%;
+    height: 200px;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+.carousel-item img {
+    width: 100%;
 }
 
 .detail-right {
     width: 20%;
     margin: 2%;
-    /* border: 2px solid yellow; */
 }

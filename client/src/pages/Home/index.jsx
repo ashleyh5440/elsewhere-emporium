@@ -9,6 +9,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
 
 import '../Home/style.css'
 import banner from '../../../public/banner.png'
@@ -48,7 +49,7 @@ const Home = () => {
       <p>Moonblood Studio</p>
       <p id="tagline">Magic Drawn</p>
     </div>
-    <Container className="features-section">
+    {/* <Container className="features-section">
       <div className="feature">
         <h3>Fast Checkout</h3>
         <p>Secure payments powered by Stripe for quick, safe purchases.</p>
@@ -61,12 +62,12 @@ const Home = () => {
           <h3>Easy Shipping</h3>
           <p>Quick delivery and easy order tracking.</p>
       </div>
-    </Container>
+    </Container> */}
     <Link to="/shop">
-      <button className="shop-button">Shop Now</button>
+      <Button className="shop-button">Shop Now</Button>
     </Link>
-    <Container className="features-section" style={{height: "100vh"}}>
-      <Row style={{paddingTop: "12%"}}>
+    <Container className="features-section">
+      <Row style={{paddingTop: "5%"}}>
         <Col sm={8}>
           <div id="home-about">
             <p>Moonblood Studio is a botique art shop conjured from deep roots, folklore, and fiece feminine magic. From creepy-cute witch familiars to mystical prints and coloring pages, everything is crafted with intent, spirit, and just the right amount of trouble.</p>

@@ -8,13 +8,15 @@ a:hover {
 }
 
 a h2 {
-    font-size: 50px;
-    font-family: "Kristi", cursive;
+    font-size: 40px;
+    font-family: "Viaoda Libre", serif;
+    color: white;
 }
 
 p {
     font-family: "Viaoda Libre", serif;
     font-size: 22px;
+    color: white;
 }
 
 .bg-body-tertiary {

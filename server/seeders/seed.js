@@ -10,14 +10,27 @@ db.once('open', async () => {
     
     await Product.create(productSeeds);
 
-    //this extracts products based on their categories
-    const uniqueCategories = [...new Set(productSeeds.map(p => p.category))];
+    const categoryMap = {};
 
-    //create category docs in the database
-    const categoryDocs = uniqueCategories.map(name => ({
-      name, 
-      image: `images/${name.toLowerCase()}.png`
+    productSeeds.forEach(product => {
+      if (!categoryMap[product.category]) {
+        categoryMap[product.category] = product.categoryImage;
+      }
+    });
+
+    const categoryDocs = Object.keys(categoryMap).map(name => ({
+      name,
+      image: categoryMap[name]
     }));
+
+    // //this extracts products based on their categories
+    // const uniqueCategories = [...new Set(productSeeds.map(p => p.category))];
+
+    // //create category docs in the database
+    // const categoryDocs = uniqueCategories.map(name => ({
+    //   name, 
+    //   image: `images/${name.toLowerCase()}.png`
+    // }));
 
     await Category.create(categoryDocs);
 
