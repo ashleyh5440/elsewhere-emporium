@@ -24,7 +24,7 @@ const Shop = () => {
     return (
         <section className="shop-container">
             <div className="category-box">
-                <p>see me?</p>
+                <p>see me??</p>
                 {categories.map((cat) => (
                     <Link 
                         to={`/shop/${cat.name}`}
