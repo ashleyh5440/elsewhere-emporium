@@ -3,19 +3,15 @@
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-top: 5%;
 }
 
 .category-card {
-   background-image: url(../../../public/img-background.png);
-   background-size: 63%;
-   height: 365px;
-    background-repeat: no-repeat;
-    background-position: center top;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 35%;
+    width: 30%;
     margin: 2%;
 }
 
@@ -31,4 +27,22 @@
 
 .cat-img img {
     width: 100%;
+}
+
+@media (max-width: 992px) {
+    .category-card h3 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .category-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .category-card {
+        width: 70%;
+        margin: 10%;
+    }
 }

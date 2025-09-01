@@ -4,6 +4,7 @@ import React, { useEffect, useRef } from 'react';
 import{ Link } from "react-router-dom"
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { QUERY_CATEGORIES } from '../../utils/queries';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import Container from 'react-bootstrap/Container';
@@ -12,7 +13,6 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 
 import '../Home/style.css'
-import banner from '../../../public/banner.png'
 
 const Home = () => {
 
@@ -21,10 +21,10 @@ const Home = () => {
         gsap.registerPlugin(ScrollTrigger);
 
         // ScrollTrigger for each container
-        gsap.utils.toArray(".home-container").forEach(container => {
-            gsap.from(container, {
+        gsap.utils.toArray(".section").forEach(section => {
+            gsap.from(section, {
                 scrollTrigger: {
-                    trigger: container,
+                    trigger: section,
                     start: 'top bottom-=100',
                     end: 'bottom top',
                     toggleActions: 'play none none reverse', 
@@ -43,34 +43,37 @@ const Home = () => {
         }
     };  
 
+    const { loading, data, error } = useQuery(QUERY_CATEGORIES);
+      if (loading) return <p>Loading ...</p>
+      if (error) return <p>Um ... this is awkward but ...</p>
+      const categories = data?.categories || [];
+
   return (
    <section className="home-container">
     <div id='banner-box'>
       <p>Moonblood Studio</p>
       <p id="tagline">Magic Drawn</p>
     </div>
-    {/* <Container className="features-section">
-      <div className="feature">
-        <h3>Fast Checkout</h3>
-        <p>Secure payments powered by Stripe for quick, safe purchases.</p>
-      </div>
-      <div className="feature">
-          <h3>Digital & Physical Goods</h3>
-          <p>Browse a variety of products to suit your needs.</p>
-      </div>
-      <div className="feature">
-          <h3>Easy Shipping</h3>
-          <p>Quick delivery and easy order tracking.</p>
-      </div>
-    </Container> */}
+    <Container className="section" id="features">
+      {categories.map((cat) => (
+        <Link 
+          to={`/shop/${cat.name}`}
+          key={cat._id}
+          className='category-card' 
+        >
+          <h3>{cat.name}</h3>
+          <div className="cat-img"><img src={cat.image}/></div>
+        </Link>
+      ))}
+    </Container>
     <Link to="/shop">
       <Button className="shop-button">Shop Now</Button>
     </Link>
-    <Container className="features-section">
+    <Container className="section">
       <Row style={{paddingTop: "5%"}}>
         <Col sm={8}>
           <div id="home-about">
-            <p>Moonblood Studio is a botique art shop conjured from deep roots, folklore, and fiece feminine magic. From creepy-cute witch familiars to mystical prints and coloring pages, everything is crafted with intent, spirit, and just the right amount of trouble.</p>
+            <p>Moonblood Studio is a botique art shop conjured from deep roots, folklore, and fiece magic. From creepy-cute witch familiars to mystical prints and coloring pages, everything is crafted with intent, spirit, and just the right amount of trouble.</p>
           </div>
         </Col>
         <Col>

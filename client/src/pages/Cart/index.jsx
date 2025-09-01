@@ -29,7 +29,7 @@ const Cart = () => {
                             </div>
                             <Row className="qnty-box">
                                 <Col><Button className="sub-btn" onClick={() => decreaseQty(item._id)}>-</Button></Col>
-                                <Col style={{color: "white"}}>Qty: {item.quantity}</Col>
+                                <Col className="qty-col" style={{color: "white"}}>Qty: {item.quantity}</Col>
                                 <Col><Button className="add-btn"onClick={() => increaseQty(item._id)}>+</Button></Col>
                             </Row>
                             <p>${(item.price * item.quantity).toFixed(2)}</p>

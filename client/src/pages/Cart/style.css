@@ -53,3 +53,50 @@
     font-size: 25px;
     margin-top: 10px;
 }
+
+
+@media (max-width: 992px) {
+    .cart-page .container {
+        flex-direction: column;
+    }
+
+    .item-box {
+        width: 90%;
+        margin-top: 12%;
+    }
+
+    .item-box h4, .checkout-box h3, p {
+        font-size: 20px;
+    }
+
+    .qnty-box {
+        width: 90%;
+        margin-bottom: 5%;
+    }
+
+    .col {
+        width: 100%;
+    }
+
+    .qnty-box .sub-btn-col {
+        order: 2 !important;
+    }
+
+    .qnty-box .qty-col {
+        order: 1 !important;
+    }
+
+    .sub-btn, .add-btn {
+        width: 60%;
+        font-size: 30px;
+    }
+
+    .checkout-box h3{
+        font-size: 30px;
+        margin-top: 30px;
+    }
+
+    .checkout-box button {
+        margin: 5% 0;
+    }
+}

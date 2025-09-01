@@ -4,12 +4,7 @@ import{ Link } from "react-router-dom"
 import { QUERY_PRODUCTS } from '../../utils/queries';
 import { QUERY_CATEGORIES } from '../../utils/queries';
 
-// import '../../components/CategoryList/index'
-
 import 'bootstrap/dist/css/bootstrap.css';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 
 import '../Shop/style.css'
 
@@ -23,9 +18,8 @@ const Shop = () => {
     console.log(categories)
     return (
         <section className="shop-container">
-            <div className="category-box">
-                <p>see me??</p>
-                {categories.map((cat) => (
+            <div className="category-box">   
+                 {categories.map((cat) => (
                     <Link 
                         to={`/shop/${cat.name}`}
                         key={cat._id}
