@@ -93,4 +93,10 @@
     .detail-left {
         height: 200px;
     }
+
+    @media (max-width: 576px) {
+        .carousel-control-next, .carousel-control-prev {
+            display: none;
+        }
+    }
 }
