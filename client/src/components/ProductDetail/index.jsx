@@ -29,6 +29,7 @@ const ProductDetail = () => {
     if (!product) return <p>Not found</p>
 
     const images = product.images || [];
+    const description = product.description || [];
 
     return (
         <section className="detail-page">

@@ -18,6 +18,10 @@ const productSchema = new Schema({
         required: true,
         validate: (arr) => arr.length > 0 //needs to have at least one image but can have more
     },
+    description: {
+      type: String,
+      required: true,
+    },
     price: {
         type: Number,
         required: true,

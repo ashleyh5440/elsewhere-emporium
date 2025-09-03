@@ -22,7 +22,7 @@
         "price": 30
     },
      {
-        "name": "Shadow and Smoke Bookmark Bundle",
+        "name": "Shadow & Smoke Bookmark Bundle",
         "category": "Bookmark Bundles",
         "categoryImage": "images/bookmark-bundles.jpg",
         "images": ["images/product1a.jpg", "images/product1b.jpg", "images/product1c.jpg", "images/product1d.jpg"],
@@ -62,7 +62,7 @@
         "price": 10
     },
     {
-        "name": "Shadow and Smoke Sticker Bundle",
+        "name": "Shadow & Smoke Sticker Bundle",
         "category": "Sticker Bundles",
         "categoryImage": "images/sticker-bundles.jpg",
        "images": ["images/product1a.jpg", "images/product1b.jpg", "images/product1c.jpg", "images/product1d.jpg"],
@@ -102,7 +102,7 @@
         "price": 12
     },
      {
-        "name": "Shadow and Smoke Mixed Bundle",
+        "name": "Shadow & Smoke Mixed Bundle",
         "category": "Paper Charms Sets",
         "categoryImage": "images/paper-charms.jpg",
         "images": ["images/product1a.jpg", "images/product1b.jpg", "images/product1c.jpg", "images/product1d.jpg"],
