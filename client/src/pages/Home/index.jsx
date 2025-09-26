@@ -73,7 +73,7 @@ const Home = () => {
       <Row style={{paddingTop: "5%"}}>
         <Col sm={8}>
           <div id="home-about">
-            <p>Moonblood Studio is a botique art shop conjured from deep roots, folklore, and fiece magic. From creepy-cute witch familiars to mystical prints and coloring pages, everything is crafted with intent, spirit, and just the right amount of trouble.</p>
+            <p>Elsewhere Emporium is a botique shop conjured from deep roots, folklore, and fiece magic. From creepy-cute witch familiars to mystical prints and coloring pages, everything is crafted with intent, spirit, and just the right amount of trouble.</p>
           </div>
         </Col>
         <Col>

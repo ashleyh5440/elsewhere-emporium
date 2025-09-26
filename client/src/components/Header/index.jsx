@@ -14,7 +14,7 @@ function Nav() {
   return (
     <Navbar className="bg-body-tertiary">
       <Container>
-        <Link to="/"><h2>Moonblood Studio</h2></Link>
+        <Link to="/"><h2>Elsewhere Emporium</h2></Link>
         <Navbar.Collapse className="justify-content-end">
           <Navbar.Text>
            <Link to="/cart"><p>View Cart <span>{cartCount > 0 && `${cartCount}`}</span></p></Link>
