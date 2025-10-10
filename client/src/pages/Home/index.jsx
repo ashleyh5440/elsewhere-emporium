@@ -12,36 +12,38 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 
+import border from '../../../public/border.png'
+
 import '../Home/style.css'
 
 const Home = () => {
 
-  useEffect(() => {
-        // initialize ScrollTrigger
-        gsap.registerPlugin(ScrollTrigger);
+  // useEffect(() => {
+  //       // initialize ScrollTrigger
+  //       gsap.registerPlugin(ScrollTrigger);
 
-        // ScrollTrigger for each container
-        gsap.utils.toArray(".section").forEach(section => {
-            gsap.from(section, {
-                scrollTrigger: {
-                    trigger: section,
-                    start: 'top bottom-=100',
-                    end: 'bottom top',
-                    toggleActions: 'play none none reverse', 
-                },
-                opacity: 0,
-                y: 100,
-                duration: 1,
-            });
-        });
-    }, []);
+  //       // ScrollTrigger for each container
+  //       gsap.utils.toArray(".section").forEach(section => {
+  //           gsap.from(section, {
+  //               scrollTrigger: {
+  //                   trigger: section,
+  //                   start: 'top bottom-=100',
+  //                   end: 'bottom top',
+  //                   toggleActions: 'play none none reverse', 
+  //               },
+  //               opacity: 0,
+  //               y: 100,
+  //               duration: 1,
+  //           });
+  //       });
+  //   }, []);
 
-    const scrollToSection = (sectionId) => {
-        const section = document.getElementById(sectionId);
-        if (section) {
-            section.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-    };  
+  //   const scrollToSection = (sectionId) => {
+  //       const section = document.getElementById(sectionId);
+  //       if (section) {
+  //           section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  //       }
+  //   };  
 
     const { loading, data, error } = useQuery(QUERY_CATEGORIES);
       if (loading) return <p>Loading ...</p>
@@ -50,9 +52,12 @@ const Home = () => {
 
   return (
    <section className="home-container">
-    <div id='banner-box'>
-      <p>Moonblood Studio</p>
-      <p id="tagline">Magic Drawn</p>
+    <div id="banner-box">
+      {/* <p id="tagline">Elsewhere Emporium</p> */}
+    </div>
+    <div className="border-box">
+      <p></p>
+      <img id="border" src={border} />
     </div>
     <Container className="section" id="features">
       {categories.map((cat) => (

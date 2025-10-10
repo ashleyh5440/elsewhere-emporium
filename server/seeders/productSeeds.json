@@ -1,25 +1,27 @@
 [
   {
-        "name": "Digital Print1",
-        "category": "Digital Prints",
+        "name": "Burn and Bubble",
+        "category": "Prints",
         "categoryImage": "images/digital-prints.jpg",
         "images": ["images/product1a.jpg"],
-        "price": 20
+        "description": "16x20 print",
+        "price": 25
     },
     {
-        "name": "Digital Print2",
-        "category": "Digital Prints",
+        "name": "Everyday Magic",
+        "category": "Prints",
         "categoryImage": "images/digital-prints.jpg",
         "images": ["images/product1a.jpg"],
-        "price": 10
+        "description": "16x20 print",
+        "price": 25
     },
     {
-        "name": "Digital Print3",
-        "category": "Digital Prints",
+        "name": "Sweet Home",
+        "category": "Prints",
         "categoryImage": "images/digital-prints.jpg",
         "images": ["images/product1a.jpg"],
-        "description": "Bundle of four bookmarks.",
-        "price": 30
+        "description": "16x20 print",
+        "price": 25
     },
      {
         "name": "Shadow & Smoke Bookmark Bundle",
@@ -27,7 +29,7 @@
         "categoryImage": "images/bookmark-bundles.jpg",
         "images": ["images/product1a.jpg", "images/product1b.jpg", "images/product1c.jpg", "images/product1d.jpg"],
         "description": "Bundle of four bookmarks.",
-        "price": 10
+        "price": 12
     },
      {
         "name": "Familiar Spirits Bookmark Bundle",
@@ -35,23 +37,7 @@
         "categoryImage": "images/bookmark-bundles.jpg",
         "images": ["images/product1a.jpg", "images/product1b.jpg", "images/product1c.jpg", "images/product1d.jpg"],
         "description": "Bundle of four bookmarks.",
-        "price": 10
-    },
-    {
-        "name": "Third Eye Vision Bookmark Bundle",
-        "category": "Bookmark Bundles",
-        "categoryImage": "images/bookmark-bundles.jpg",
-        "images": ["images/product1a.jpg", "images/product1b.jpg", "images/product1c.jpg", "images/product1d.jpg"],
-        "description": "Bundle of four bookmarks.",
-        "price": 10
-    },
-    {
-        "name": "Midnight Coven Bookmark Bundle",
-        "category": "Bookmark Bundles",
-        "categoryImage": "images/bookmark-bundles.jpg",
-       "images": ["images/product1a.jpg", "images/product1b.jpg", "images/product1c.jpg", "images/product1d.jpg"],
-        "description": "Bundle of four bookmarks.",
-        "price": 10
+        "price": 12
     },
     {
         "name": "Dark Garden Bookmark Bundle",
@@ -59,14 +45,14 @@
         "categoryImage": "images/bookmark-bundles.jpg",
         "images": ["images/product1a.jpg", "images/product1b.jpg", "images/product1c.jpg", "images/product1d.jpg"],
         "description": "Bundle of four bookmarks.",
-        "price": 10
+        "price": 12
     },
     {
         "name": "Shadow & Smoke Sticker Bundle",
         "category": "Sticker Bundles",
         "categoryImage": "images/sticker-bundles.jpg",
        "images": ["images/product1a.jpg", "images/product1b.jpg", "images/product1c.jpg", "images/product1d.jpg"],
-        "description": "Bundle of six stickers.",
+        "description": "Bundle of five stickers.",
         "price": 12
     },
      {
@@ -74,23 +60,7 @@
         "category": "Sticker Bundles",
         "categoryImage": "images/sticker-bundles.jpg",
         "images": ["images/product1a.jpg", "images/product1b.jpg", "images/product1c.jpg", "images/product1d.jpg"],
-        "description": "Bundle of six stickers.",
-        "price": 12
-    },
-    {
-        "name": "Third Eye Vision Sticker Bundle",
-        "category": "Sticker Bundles",
-        "categoryImage": "images/sticker-bundles.jpg",
-       "images": ["images/product1a.jpg", "images/product1b.jpg", "images/product1c.jpg", "images/product1d.jpg"],
-        "description": "Bundle of six stickers.",
-        "price": 12
-    },
-    {
-        "name": "Midnight Coven Sticker Bundle",
-        "category": "Sticker Bundles",
-        "categoryImage": "images/sticker-bundles.jpg",
-       "images": ["images/product1a.jpg", "images/product1b.jpg", "images/product1c.jpg", "images/product1d.jpg"],
-        "description": "Bundle of six stickers.",
+        "description": "Bundle of five stickers.",
         "price": 12
     },
     {
@@ -98,7 +68,7 @@
         "category": "Sticker Bundles",
         "categoryImage": "images/sticker-bundles.jpg",
         "images": ["images/product1a.jpg", "images/product1b.jpg", "images/product1c.jpg", "images/product1d.jpg"],
-        "description": "Bundle of six stickers.",
+        "description": "Bundle of five stickers.",
         "price": 12
     },
      {
@@ -106,39 +76,55 @@
         "category": "Paper Charms Sets",
         "categoryImage": "images/paper-charms.jpg",
         "images": ["images/product1a.jpg", "images/product1b.jpg", "images/product1c.jpg", "images/product1d.jpg"],
-        "description": "Bundle of two bookmarks and four stickers.",
-        "price": 14
+        "description": "Bundle of two bookmarks, four stickers and 8x8 mini print.",
+        "price": 25
     },
      {
         "name": "Familiar Spirits Mixed Bundle",
         "category": "Paper Charms Sets",
         "categoryImage": "images/paper-charms.jpg",
         "images": ["images/product1a.jpg", "images/product1b.jpg", "images/product1c.jpg", "images/product1d.jpg"],
-        "description": "Bundle of two bookmarks and four stickers.",
-        "price": 14
-    },
-    {
-        "name": "Third Eye Vision Mixed Bundle",
-        "category": "Paper Charms Sets",
-        "categoryImage": "images/paper-charms.jpg",
-        "images": ["images/product1a.jpg", "images/product1b.jpg", "images/product1c.jpg", "images/product1d.jpg"],
-        "description": "Bundle of two bookmarks and four stickers.",
-        "price": 14
-    },
-    {
-        "name": "Midnight Coven Mixed Bundle",
-        "category": "Paper Charms Sets",
-        "categoryImage": "images/paper-charms.jpg",
-        "images": ["images/product1a.jpg", "images/product1b.jpg", "images/product1c.jpg", "images/product1d.jpg"],
-        "description": "Bundle of two bookmarks and four stickers.",
-        "price": 14
+        "description": "Bundle of two bookmarks, four stickers and 8x8 mini print.",
+        "price": 25
     },
     {
         "name": "Dark Garden Mixed Bundle",
         "category": "Paper Charms Sets",
         "categoryImage": "images/paper-charms.jpg",
         "images": ["images/product1a.jpg", "images/product1b.jpg", "images/product1c.jpg", "images/product1d.jpg"],
-        "description": "Bundle of two bookmarks and four stickers.",
-        "price": 14
+        "description": "Bundle of two bookmarks, four stickers and 8x8 mini print.",
+        "price": 25
+    },
+     {
+        "name": "'Witch, Please' Mixed Bundle",
+        "category": "Paper Charms Sets",
+        "categoryImage": "images/paper-charms.jpg",
+        "images": ["images/product1a.jpg", "images/product1b.jpg", "images/product1c.jpg", "images/product1d.jpg"],
+        "description": "Bundle of two bookmarks, four stickers and 8x8 mini print.",
+        "price": 25
+    },
+    {
+        "name": "Mawu plushie",
+        "category": "Plushies",
+        "categoryImage": "images/paper-charms.jpg",
+        "images": ["images/product1a.jpg", "images/product1b.jpg", "images/product1c.jpg", "images/product1d.jpg"],
+        "description": "Handmade black cat plush toy",
+        "price": 30
+    },
+    {
+        "name": "Boogie plushie",
+        "category": "Plushies",
+        "categoryImage": "images/paper-charms.jpg",
+        "images": ["images/product1a.jpg", "images/product1b.jpg", "images/product1c.jpg", "images/product1d.jpg"],
+        "description": "Handmade frog plush toy",
+        "price": 30
+    },
+    {
+        "name": "Nani plushie",
+        "category": "Plushies",
+        "categoryImage": "images/paper-charms.jpg",
+        "images": ["images/product1a.jpg", "images/product1b.jpg", "images/product1c.jpg", "images/product1d.jpg"],
+        "description": "Handmade spider plush toy",
+        "price": 30
     }
 ]

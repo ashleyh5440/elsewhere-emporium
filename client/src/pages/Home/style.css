@@ -4,6 +4,10 @@
   align-items: center;
 }
 
+/* .border-box {
+  border: 2px solid red;
+} */
+
 .shop-button {
   width: 110%;
   background-color: rgb(14, 0, 43);
@@ -29,9 +33,10 @@
 #banner-box {
   width: 100%;
   height: 100vh;
-  background-image: url(../../../public/banner.png);
+  background-image: url(../../../public/name_logo.png);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: contain;
+  background-position: center;
 }
 
 #tagline {
@@ -39,6 +44,10 @@
   font-size: 60px;
   font-family: "Viaoda Libre", serif;
   color: white;
+}
+
+#border {
+  width: 100%;
 }
 
 #features {
