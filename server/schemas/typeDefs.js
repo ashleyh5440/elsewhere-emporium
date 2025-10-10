@@ -4,6 +4,7 @@ const typeDefs = `
         name: String!
         category: String!
         images: [String]!
+        description: String
         price: Int!
   }
 

@@ -12,6 +12,7 @@ import Button from 'react-bootstrap/Button';
 import Carousel from 'react-bootstrap/Carousel';
 
 import '../ProductDetail/style.css'
+import border from '../../../public/border.png'
 
 const ProductDetail = () => {
     const { productId } = useParams();
@@ -27,9 +28,9 @@ const ProductDetail = () => {
 
     const product = data?.product;
     if (!product) return <p>Not found</p>
+    console.log("see me?", product)
 
     const images = product.images || [];
-    const description = product.description || [];
 
     return (
         <section className="detail-page">
@@ -49,12 +50,15 @@ const ProductDetail = () => {
                     </Carousel>
                 </Col>
                 <Col className="detail-right">
-                        <p>description here?</p>
+                    <div className="description-box">
+                        <p>{product.description}</p>
+                    </div>
                     <p>${product.price.toFixed(2)}</p>
                     <Button onClick={() => addToCart(product)}>Add to Cart</Button>
                 </Col>
-                <div>
-                    <Button onClick={() => navigate(-1)}>Back to products</Button>
+                <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
+                     <img id="border" style={{width: "100%"}} src={border} />
+                    <Button style={{margin: "40px"}}onClick={() => navigate(-1)}>Back to products</Button>
                 </div>
             </Row>
         </section>

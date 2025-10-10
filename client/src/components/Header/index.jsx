@@ -17,7 +17,7 @@ function Nav() {
         <Link to="/"><h2>Elsewhere Emporium</h2></Link>
         <Navbar.Collapse className="justify-content-end">
           <Navbar.Text>
-           <Link to="/cart"><p>View Cart <span>{cartCount > 0 && `${cartCount}`}</span></p></Link>
+           {/* <Link to="/cart"><p>View Cart <span>{cartCount > 0 && `${cartCount}`}</span></p></Link> */}
           </Navbar.Text>
         </Navbar.Collapse>
       </Container>

@@ -4,7 +4,7 @@
         "category": "Prints",
         "categoryImage": "images/digital-prints.jpg",
         "images": ["images/product1a.jpg"],
-        "description": "16x20 print",
+        "description": "16x20 print.",
         "price": 25
     },
     {
@@ -12,7 +12,7 @@
         "category": "Prints",
         "categoryImage": "images/digital-prints.jpg",
         "images": ["images/product1a.jpg"],
-        "description": "16x20 print",
+        "description": "16x20 print.",
         "price": 25
     },
     {
@@ -20,7 +20,7 @@
         "category": "Prints",
         "categoryImage": "images/digital-prints.jpg",
         "images": ["images/product1a.jpg"],
-        "description": "16x20 print",
+        "description": "16x20 print.",
         "price": 25
     },
      {
@@ -76,7 +76,7 @@
         "category": "Paper Charms Sets",
         "categoryImage": "images/paper-charms.jpg",
         "images": ["images/product1a.jpg", "images/product1b.jpg", "images/product1c.jpg", "images/product1d.jpg"],
-        "description": "Bundle of two bookmarks, four stickers and 8x8 mini print.",
+        "description": "Bundle of two bookmarks, four stickers, and one 8x8 mini print.",
         "price": 25
     },
      {
@@ -84,7 +84,7 @@
         "category": "Paper Charms Sets",
         "categoryImage": "images/paper-charms.jpg",
         "images": ["images/product1a.jpg", "images/product1b.jpg", "images/product1c.jpg", "images/product1d.jpg"],
-        "description": "Bundle of two bookmarks, four stickers and 8x8 mini print.",
+        "description": "Bundle of two bookmarks, four stickers, and one 8x8 mini print.",
         "price": 25
     },
     {
@@ -92,7 +92,7 @@
         "category": "Paper Charms Sets",
         "categoryImage": "images/paper-charms.jpg",
         "images": ["images/product1a.jpg", "images/product1b.jpg", "images/product1c.jpg", "images/product1d.jpg"],
-        "description": "Bundle of two bookmarks, four stickers and 8x8 mini print.",
+        "description": "Bundle of two bookmarks, four stickers, and one 8x8 mini print.",
         "price": 25
     },
      {
@@ -100,7 +100,7 @@
         "category": "Paper Charms Sets",
         "categoryImage": "images/paper-charms.jpg",
         "images": ["images/product1a.jpg", "images/product1b.jpg", "images/product1c.jpg", "images/product1d.jpg"],
-        "description": "Bundle of two bookmarks, four stickers and 8x8 mini print.",
+        "description": "Bundle of two bookmarks, four stickers, and one 8x8 mini print.",
         "price": 25
     },
     {
@@ -108,7 +108,7 @@
         "category": "Plushies",
         "categoryImage": "images/paper-charms.jpg",
         "images": ["images/product1a.jpg", "images/product1b.jpg", "images/product1c.jpg", "images/product1d.jpg"],
-        "description": "Handmade black cat plush toy",
+        "description": "Handmade black cat plush toy.",
         "price": 30
     },
     {
@@ -116,7 +116,7 @@
         "category": "Plushies",
         "categoryImage": "images/paper-charms.jpg",
         "images": ["images/product1a.jpg", "images/product1b.jpg", "images/product1c.jpg", "images/product1d.jpg"],
-        "description": "Handmade frog plush toy",
+        "description": "Handmade frog plush toy.",
         "price": 30
     },
     {
@@ -124,7 +124,7 @@
         "category": "Plushies",
         "categoryImage": "images/paper-charms.jpg",
         "images": ["images/product1a.jpg", "images/product1b.jpg", "images/product1c.jpg", "images/product1d.jpg"],
-        "description": "Handmade spider plush toy",
+        "description": "Handmade spider plush toy.",
         "price": 30
     }
 ]

@@ -17,6 +17,25 @@
     margin: 2%;
 }
 
+.detail-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    margin: 2%;
+}
+
+.description-box {
+    margin-bottom: 15%;
+    line-height: 1.6;
+}
+
+.detail-right button {
+    margin-top: 5%;
+    width: 50%
+}
+
 .carousel {
     display: flex;
     flex-direction: column;
@@ -58,10 +77,6 @@
     width: 100%;
 }
 
-.detail-right {
-    width: 20%;
-    margin: 2%;
-}
 
 @media (max-width: 992px) {
 
@@ -82,6 +97,10 @@
 
     .detail-right {
         width: 100%;
+    }
+
+    .description-box {
+        margin-bottom: 10%;
     }
 }
 

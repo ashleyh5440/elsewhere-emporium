@@ -22,6 +22,7 @@ export const QUERY_SINGLE_PRODUCT = gql`
       name
       category
       images
+      description
       price
     }
   }
