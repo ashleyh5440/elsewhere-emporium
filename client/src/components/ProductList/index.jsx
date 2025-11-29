@@ -13,7 +13,6 @@ import Button from 'react-bootstrap/Button';
 
 import '../ProductList/style.css'
 
-
 const ProductList = () => {
   const { category } =  useParams();
   const { addToCart } = useContext(CartContext)

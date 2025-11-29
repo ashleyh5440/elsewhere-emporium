@@ -13,8 +13,10 @@ function Nav() {
 
   return (
     <Navbar className="bg-body-tertiary">
-      <Container>
-        <Link to="/"><h2>Elsewhere Emporium</h2></Link>
+      <Container className="header-box">
+        <h2 style={{marginLeft: "50px"}}>Etsy Shop</h2>
+        <h2 style={{marginLeft: "50px"}}>About</h2>
+        <Link to="/"><h2>Home</h2></Link>
         <Navbar.Collapse className="justify-content-end">
           <Navbar.Text>
            {/* <Link to="/cart"><p>View Cart <span>{cartCount > 0 && `${cartCount}`}</span></p></Link> */}

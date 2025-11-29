@@ -57,7 +57,7 @@ const ProductDetail = () => {
                     <Button onClick={() => addToCart(product)}>Add to Cart</Button>
                 </Col>
                 <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
-                     <img id="border" style={{width: "100%"}} src={border} />
+                     {/* <img id="border" style={{width: "100%"}} src={border} /> */}
                     <Button style={{margin: "40px"}}onClick={() => navigate(-1)}>Back to products</Button>
                 </div>
             </Row>

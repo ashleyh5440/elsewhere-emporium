@@ -11,6 +11,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
+import Sparkles from 'react-sparkle';
 
 import border from '../../../public/border.png'
 
@@ -53,13 +54,16 @@ const Home = () => {
   return (
    <section className="home-container">
     <div id="banner-box">
+      <Sparkles 
+        fadeOutSpeed={2}
+        flicker={false}/>
       {/* <p id="tagline">Elsewhere Emporium</p> */}
     </div>
     <div className="border-box">
       <p></p>
       <img id="border" src={border} />
     </div>
-    <Container className="section" id="features">
+    {/* <Container className="section" id="features">
       {categories.map((cat) => (
         <Link 
           to={`/shop/${cat.name}`}
@@ -70,10 +74,7 @@ const Home = () => {
           <div className="cat-img"><img src={cat.image}/></div>
         </Link>
       ))}
-    </Container>
-    <Link to="/shop">
-      <Button className="shop-button">Shop Now</Button>
-    </Link>
+    </Container> */}
     <Container className="section">
       <Row style={{paddingTop: "5%"}}>
         <Col sm={8}>
@@ -84,6 +85,9 @@ const Home = () => {
         <Col>
           <p>picture here</p>
         </Col>
+        <Link to="/shop">
+          <Button className="shop-button">Shop Now</Button>
+        </Link>
       </Row>
     </Container>
     </section>

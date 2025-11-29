@@ -20,6 +20,7 @@
     "dependencies": {
         "bootstrap": "^5.3.3",
         "mongoose": "^8.18.0",
-        "react-bootstrap": "^2.10.1"
+        "react-bootstrap": "^2.10.1",
+        "react-sparkle": "^2.0.0"
     }
 }

@@ -9,12 +9,13 @@
 } */
 
 .shop-button {
-  width: 110%;
+  width: 40%;
   background-color: rgb(14, 0, 43);
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
-  margin: 80% 0;
+  margin: 10%;
+  /* margin: 80% 0; */
   font-size: 1.2rem;
   cursor: pointer;
   border-radius: 5px;
@@ -37,6 +38,10 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+}
+
+#banner-box span {
+  overflow: hidden !important;
 }
 
 #tagline {

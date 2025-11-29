@@ -7,8 +7,8 @@ a:hover {
     text-decoration: none;
 }
 
-a h2 {
-    font-size: 40px;
+a h2, h2 {
+    font-size: 30px;
     font-family: "Viaoda Libre", serif;
     color: white;
 }
@@ -21,6 +21,18 @@ p {
 
 .bg-body-tertiary {
     background-color: rgb(2, 0, 36) !important;
+    padding-top: 20px !important;
+}
+
+.header-box {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.navbar, .navbar-expand, .navbar-light {
+    padding: 0px;
 }
 
 .navbar-text span {

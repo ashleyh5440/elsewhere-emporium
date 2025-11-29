@@ -17,7 +17,7 @@
 body {
     /* background-color: rgb(4, 38, 48); */
     /* background-image: radial-gradient(circle, rgb(4, 38, 48), rgb(2, 23, 30), rgb(0, 6, 8)); */
-      background-image: radial-gradient(circle, rgb(0, 2, 99), rgb(14, 0, 43), rgb(27, 0, 50));
+      background-color: rgb(0, 1, 17) !important;
   }
 
   .container {
