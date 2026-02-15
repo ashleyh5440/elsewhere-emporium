@@ -58,7 +58,6 @@ const Home = () => {
       <Sparkles 
         fadeOutSpeed={2}
         flicker={false}/>
-      {/* <p id="tagline">Elsewhere Emporium</p> */}
     </div>
     <div className="border-box">
       <p></p>
