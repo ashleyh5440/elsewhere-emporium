@@ -1,4 +1,20 @@
 [
+    {
+        "name": "Cozy Cottage Witch Core",
+        "category": "Mixed Bundle",
+        "categoryImage": "images/paper-charms.jpg",
+        "images": ["images/product1a.jpg", "images/product1b.jpg", "images/product1c.jpg", "images/product1d.jpg"],
+        "description": "Bundle of two bookmarks, four stickers, one pin, and one 8x8 mini print.",
+        "price": 35
+    },
+    {
+        "name": "Monsterous Madams",
+        "category": "Mixed Bundle",
+        "categoryImage": "images/paper-charms.jpg",
+        "images": ["images/product1a.jpg", "images/product1b.jpg", "images/product1c.jpg", "images/product1d.jpg"],
+        "description": "Bundle of two bookmarks, four stickers, one pin, and one 8x8 mini print.",
+        "price": 35
+    },
   {
         "name": "Burn and Bubble",
         "category": "Prints",

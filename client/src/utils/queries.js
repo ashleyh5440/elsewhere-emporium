@@ -50,6 +50,16 @@ export const QUERY_CATEGORIES = gql`
   }
 `;
 
+export const QUERY_SINGLE_CATEGORY = gql`
+  query getSingleCategory($name: String!) {
+    category(name: $name) {
+      _id
+      name
+      image
+    }
+  }
+`;
+
 export const QUERY_SINGLE_ORDER = gql `
     query singleOrder {
         order {

@@ -50,7 +50,7 @@ const ProductList = () => {
             </div>
         ))}
       </Container>
-      <Link to="/shop"><Button id="return-btn">Return to Shop page</Button></Link>
+      <Link to="/"><Button id="return-btn">Return to Home</Button></Link>
     </section>
   )
 }

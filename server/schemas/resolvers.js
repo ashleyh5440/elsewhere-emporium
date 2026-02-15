@@ -15,6 +15,9 @@ const resolvers = {
     // products: async () => Product.find(),
     products: async () => Product.find().populate('category'),
     orders: async () => Order.find(),
+    // category: async (_, { name }) => {
+    //   return Category.findOne({ name: new RegExp(`^${name}$`, 'i') });
+    // },
     categories: async () => Category.find(),
     product: async (_, { productId }) => Product.findById(productId),
     productsByCategory: async (_, { category }) => {

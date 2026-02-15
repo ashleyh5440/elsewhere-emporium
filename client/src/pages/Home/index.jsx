@@ -14,6 +14,7 @@ import Button from 'react-bootstrap/Button';
 import Sparkles from 'react-sparkle';
 
 import border from '../../../public/border.png'
+import home_abt from '../../../public/banner.png'
 
 import '../Home/style.css'
 
@@ -83,9 +84,10 @@ const Home = () => {
           </div>
         </Col>
         <Col>
-          <p>picture here</p>
+          <img id="border" src={home_abt} />
         </Col>
-        <Link to="/shop">
+        {/* only to mixed bundle for now */}
+        <Link to="shop/Mixed%20Bundle">
           <Button className="shop-button">Shop Now</Button>
         </Link>
       </Row>
